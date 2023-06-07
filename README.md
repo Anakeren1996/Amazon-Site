@@ -10,12 +10,12 @@
     <li>Deixar o botão do carrinho iterativo.</li>
     <li>Adicionar produtos no carrinho através da quantidade selecionada no select.</li>
     <li>Mostrar uma mensagem com set time out, ao adicionar produtos no carrinho.</li>
+    <li>Deixar a barra de pesquisa iterativa.</li>
 </ul>
 
 <p>A fazer:</p>
 <ul>
-    <li>Deixar a barra de pesquisa iterativa.</li>
-     <li>Ao usuário adicionar produtos no carrinho e atualizar a página, o produto deve continuar no carrinho a não ser que o usuário delete o produto na página de pedidos.</li>
+    <li>Ao usuário adicionar produtos no carrinho e atualizar a página, o produto deve continuar no carrinho a não ser que o usuário delete o produto na página de pedidos.</li>
     <li>Criar a iteratividade da página de pedidos.</li>
     <li>Criar a iteratividade da página de checkout.</li>
 </ul>
@@ -43,4 +43,13 @@
 
 ## Select steps
 
-### when adding a product to the cart, instead increasing one by one, we'll increase the quantity  by the number in the selector. -->
+### when adding a product to the cart, instead increasing one by one, we'll increase the quantity  by the number in the selector.
+
+## Input interactive steps:
+
+### 1. Get the value that was typed by the user.
+
+### 2. Listen for the event of clicking the search icon button, and listen for the event of clicking the enter key.
+
+### 3. If the words typed by the user match the product(s), display the product in question, otherwise display a message that the product was not found.
+-->

@@ -23,16 +23,17 @@
 <body>
   <div class="amazon-header">
     <div class="amazon-header-left-section">
-      <a href="amazon.html" class="header-link">
+      <a href="index.html" class="header-link">
         <img class="amazon-logo" src="images/amazon-logo-white.png">
         <img class="amazon-mobile-logo" src="images/amazon-mobile-logo-white.png">
       </a>
     </div>
 
     <div class="amazon-header-middle-section">
-      <input class="search-bar" type="text" placeholder="Search">
 
-      <button class="search-button">
+      <input id="search-input" class="js-search-bar search-bar" type="text" placeholder="Search" value
+        data-testid="search-input">
+      <button id="search-button" class="js-search-button search-button" data-testid="search-button">
         <img class="search-icon" src="images/icons/search-icon.png">
       </button>
     </div>

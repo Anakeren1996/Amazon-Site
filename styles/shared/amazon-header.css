@@ -103,6 +103,12 @@
   justify-content: end;
 }
 
+.no-result-products {
+  padding-left: 10px;
+  padding-top: 10px;
+  grid-column: span 2;
+}
+
 .orders-link {
   color: white;
 }
@@ -143,7 +149,7 @@
   position: absolute;
   top: 4px;
   left: 22px;
-  
+
   width: 26px;
   text-align: center;
 }
