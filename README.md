@@ -7,25 +7,25 @@
 <p>O que já foi feito:</p>
 <ul>
     <li>Adicionar produtos na página usando javascript.</li>
-    <li>Deixar o botão do carrinho iterativo.</li>
+    <li>Deixar o botão do carrinho interativo.</li>
     <li>Adicionar produtos no carrinho através da quantidade selecionada no select.</li>
     <li>Mostrar uma mensagem com set time out, ao adicionar produtos no carrinho.</li>
-    <li>Deixar a barra de pesquisa iterativa.</li>
+    <li>Deixar o input interativo.</li>
 </ul>
 
 <p>A fazer:</p>
 <ul>
     <li>Ao usuário adicionar produtos no carrinho e atualizar a página, o produto deve continuar no carrinho a não ser que o usuário delete o produto na página de pedidos.</li>
-    <li>Criar a iteratividade da página de pedidos.</li>
-    <li>Criar a iteratividade da página de checkout.</li>
+    <li>Criar a interatividade da página de pedidos.</li>
+    <li>Criar a interatividade da página de checkout.</li>
 </ul>
 
 <h3>Status do projeto:</h3>
-<p>Em andamento.</p>
+<p>Em andamento. Conforme estudando e praticando vou melhorando o projeto.</p>
 
 <h3>O que estou aprendendo ao desenvolver esse projeto?</h3>
-<p>Esse projeto faz parte de um curso do básico ao intermediário que eu fiz, no youtube.Adicionar os produtos com javascript foram feitas durante as aulas, as iteratividades foram deixadas como exercício.</p>
-<p>Com isso eu estou aprendendo a pesquisar de uma maneira melhor, através de documentações do javascript como o MDN e o W3schools, além disso também tive ajuda do chatGPT. Esse projeto também me ajudou a me acostumar a pesquisar e escrever códigos em inglês, pos qualquer pessoa do mundo vai poder entender o código. Quanto ao javascript, usei array, objetos, Dom em um projeto real</p>
+<p>Esse projeto faz parte de um curso do básico ao intermediário. Adicionar os produtos com javascript foram feitas durante as aulas, as interatividades foram deixadas como exercício.</p>
+<p>Com isso eu estou aprendendo a pesquisar de uma maneira melhor, através de documentações do javascript como o MDN e o W3schools, além disso também tive ajuda do chatGPT. Esse projeto também me ajudou a me acostumar a pesquisar e escrever códigos em inglês, com isso qualquer pessoa do mundo vai poder entender o código. Quanto ao javascript, usei array, objetos, Dom em um projeto real.</p>
 
 <!-- # Main idea of javascript
 
