@@ -2,7 +2,7 @@
 
  <img src="images/README-images/readme-first-image.png">
 
-<p>Nesse projeto o foco é criar a iteratividade das páginas</p>
+<p>Nesse projeto o foco é criar a interatividade das páginas</p>
 
 <p>O que já foi feito:</p>
 <ul>
