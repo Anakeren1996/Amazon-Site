@@ -1,6 +1,8 @@
 let productsHTML = "";
 
 // Use this data to generate html / looping through the array of products and for each product we are creating all of the html.
+
+// forEach loop structure
 products.forEach((product) => {
   productsHTML += `
       <div class="product-container">
@@ -151,8 +153,28 @@ function addToCart() {
 
         addedMessageTimeouts[productId] = timeoutId;
       }
+
+      // LocalStorage
+      localStorage.setItem("cart", JSON.stringify(cart));
     });
   });
+
+  // This variable stores the array of products stored in localStorage
+  let cart = [];
+
+  // Check if a cart is stored in localStorage
+  const storedCart = localStorage.getItem("cart");
+  if (storedCart) {
+    // Cart is retrieved and converted from JSON to a JavaScript object
+    cart = JSON.parse(storedCart);
+  }
+
+  // Update quantity in the cart
+
+  // Reduce: adds the number of items in the cart
+  const cartQuantity = cart.reduce((total, item) => total + item.quantity, 0);
+  const cartIcon = document.querySelector(".js-cart-quantity");
+  cartIcon.innerHTML = cartQuantity;
 }
 
 // Function to display the corresponding products
