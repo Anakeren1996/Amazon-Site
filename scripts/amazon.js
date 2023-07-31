@@ -1,3 +1,5 @@
+import { cart } from '../data/cart.js';
+
 let productsHTML = "";
 
 // Use this data to generate html / looping through the array of products and for each product we are creating all of the html.
