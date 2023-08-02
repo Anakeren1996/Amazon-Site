@@ -1,4 +1,6 @@
-export const cart = [{
+// ALL THE CODES ITS RELATED TO THE CART
+
+export let cart = [{
   productId: 'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',
   quantity: 2,
 }, {
@@ -35,5 +37,22 @@ export function addToCart(productId) {
         quantity: quantity,
       });
     }
+  }
+
+  // FUNCTION DELETE STEPS
+  // 1- CREATE A NEW ARRAY
+  // 2 - LOOP THROUGH THE CART
+  // 3 - ADD EACH PRODUCT TO THE NEW ARRAY, EXCEPT FOR THIS PRODUCTID
+
+ export function removeFromCart(productId) {
+    const newCart = [];
+
+    cart.forEach((cartItem) => {
+      if(cartItem.productId !== productId) {
+        newCart.push(cartItem);
+      }
+    });
+
+    cart = newCart;
   }
   
