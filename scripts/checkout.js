@@ -3,7 +3,7 @@
 // 2- GENERATE THE HTML
 // 3 - MAKE IT INTERACTIVE
 
-import { cart, removeFromCart } from "../data/cart.js";
+import { cart, removeFromCart, calculateCartQuantity } from "../data/cart.js";
 import { products } from "../data/products.js";
 import { formatCurrency } from "./utils/money.js";
 
@@ -136,10 +136,7 @@ document.querySelectorAll(".js-delete-link").forEach((link) => {
 // UPDATE THE PAGE TITLE TO DISPLAY THE QUANTITY AT THE CHECKOUT
 
 function updateCartQuantity() {
-  let cartQuantity = cart.reduce(
-    (total, cartItem) => total + cartItem.quantity,
-    0
-  );
+  const cartQuantity = calculateCartQuantity();
 
   let checkoutQuantityTitle = document.querySelector(".js-checkout-quantity");
 
