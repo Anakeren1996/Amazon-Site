@@ -5,7 +5,7 @@
 
 import { cart, removeFromCart } from "../data/cart.js";
 import { products } from "../data/products.js";
-import {formatCurrency } from "./utils/money.js";
+import { formatCurrency } from "./utils/money.js";
 
 // EVERY TIME WE LOOP THROUGH THE CART WE ARE GOING TO ADD THIS HTML
 let cartSummaryHTML = "";
@@ -22,7 +22,7 @@ cart.forEach((cartItem) => {
     }
   });
 
-//   console.log(matchingProduct);
+  //   console.log(matchingProduct);
 
   cartSummaryHTML += `
 <div class="cart-item-container 
@@ -49,7 +49,9 @@ js-cart-item-container-${matchingProduct.id}">
         <span class="update-quantity-link link-primary">
         Update
         </span>
-        <span class="delete-quantity-link link-primary js-delete-link" data-product-id="${matchingProduct.id}">
+        <span class="delete-quantity-link link-primary js-delete-link" data-product-id="${
+          matchingProduct.id
+        }">
         Delete
         </span>
     </div>
@@ -114,17 +116,36 @@ document.querySelector(".js-order-summary").innerHTML = cartSummaryHTML;
 // 2 - UPDATE THE HTML (USE THE DOM TO GET THE ELEMENT TO REMOVE / USE .remove() METHOD)
 
 document.querySelectorAll(".js-delete-link").forEach((link) => {
-    link.addEventListener("click", () => {
-        // console.log('delete');
-        const productId = link.dataset.productId;
-        // console.log(productId);
-        removeFromCart(productId);
-        // console.log(cart);
+  link.addEventListener("click", () => {
+    // console.log('delete');
+    const productId = link.dataset.productId;
+    // console.log(productId);
+    removeFromCart(productId);
+    // console.log(cart);
 
-        const container = document.querySelector(
-            `.js-cart-item-container-${productId}`
-        );
-        // console.log(container);
-        container.remove();
-    });
+    const container = document.querySelector(
+      `.js-cart-item-container-${productId}`
+    );
+    // console.log(container);
+    container.remove();
+
+    updateCartQuantity();
+  });
 });
+
+// UPDATE THE PAGE TITLE TO DISPLAY THE QUANTITY AT THE CHECKOUT
+
+function updateCartQuantity() {
+  let cartQuantity = cart.reduce(
+    (total, cartItem) => total + cartItem.quantity,
+    0
+  );
+
+  let checkoutQuantityTitle = document.querySelector(".js-checkout-quantity");
+
+  checkoutQuantityTitle.innerHTML = `${cartQuantity} ${
+    cartQuantity === 1 ? "item" : "items"
+  }`;
+}
+
+updateCartQuantity();
