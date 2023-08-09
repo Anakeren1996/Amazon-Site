@@ -70,6 +70,10 @@ cart.forEach((cartItem) => {
           Delete
           </span>
       </div>
+
+      <div class="div-error-checkout js-div-error-checkout">
+          <p>Quantity must be at least 0 and less than 1000</p>
+      </div>
       </div>
   
       <div class="delivery-options">
@@ -197,9 +201,10 @@ document.querySelectorAll(".js-save-link").forEach((link) => {
 // Function to save the quantity and update the cart
 function saveQuantity(productId, quantityInput) {
   const newQuantity = Number(quantityInput.value);
+  let divError = document.querySelector(".js-div-error-checkout");
 
   if (newQuantity <= 0 || newQuantity >= 1000) {
-    alert("Quantity must be at least 0 and less than 1000");
+    divError.style.display = "block";
 
     setTimeout(() => {
       const quantityInput = document.querySelector(
@@ -209,6 +214,8 @@ function saveQuantity(productId, quantityInput) {
     }, 2000);
 
     return;
+  } else {
+    divError.style.display = "none";
   }
 
   updateQuantity(productId, newQuantity);

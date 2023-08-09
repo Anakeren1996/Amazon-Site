@@ -234,3 +234,12 @@
 .is-editing-quantity .update-quantity-link {
   display: none;
 }
+
+.div-error-checkout {
+  display: none;
+  font-size: 15px;
+  color: red;
+  border: 1px solid red;
+  padding: 5px;
+  margin-top: 5px;
+}
