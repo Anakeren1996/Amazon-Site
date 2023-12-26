@@ -181,6 +181,8 @@ import {
       checkoutQuantityTitle.innerHTML = `${cartQuantity} ${
         cartQuantity === 1 ? "item" : "items"
       }`;
+
+      renderPaymentSummary();
     }
   
     updateCartQuantity();
