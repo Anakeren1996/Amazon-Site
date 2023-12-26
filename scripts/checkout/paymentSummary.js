@@ -73,3 +73,5 @@ export function renderPaymentSummary() {
 
     document.querySelector('.js-payment-summary').innerHTML = paymentSummaryHTML;
 }
+
+// MAKE IT INTERACTIVE (CONTROLLER)

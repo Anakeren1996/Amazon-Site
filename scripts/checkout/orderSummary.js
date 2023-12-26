@@ -14,6 +14,7 @@ import {
   } from "../../data/cart.js";
   import { products, getProduct } from "../../data/products.js";
   import { formatCurrency } from "../utils/money.js";
+  import { renderPaymentSummary } from "./paymentSummary.js";
   
   // DEFAULT EXPORT
   import dayjs from "https://unpkg.com/dayjs@1.11.10/esm/index.js";
@@ -24,10 +25,6 @@ import {
   // GET TODAY'S DATE
   // DO CALCULATIONS
   // DISPLAY THE DATE IN EASY-TO-READ FORMAT
-  const today = dayjs();
-  const deliveryDate = today.add(7, "days");
-  console.log(deliveryDate);
-  console.log(deliveryDate.format("dddd, MMMM D"));
   
   export function renderOrderSummary() {
     // EVERY TIME WE LOOP THROUGH THE CART WE ARE GOING TO ADD THIS HTML
@@ -167,6 +164,8 @@ import {
         );
         // console.log(container);
         container.remove();
+
+        renderPaymentSummary();
   
         updateCartQuantity();
       });
