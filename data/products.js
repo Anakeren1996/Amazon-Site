@@ -1,3 +1,16 @@
+export function getProduct(productId) {
+  let cartSummaryHTML = "";
+  let matchingProduct;
+
+  products.forEach((product) => {
+    if (product.id === productId) {
+      matchingProduct = product;
+    }
+  });
+
+  return matchingProduct;
+}
+
 // Variable to save the data
 export const products = [
   {
