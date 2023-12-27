@@ -1,55 +1,57 @@
-<h1>Amazon projeto para melhorar as minhas habilidades com javascript</h1>
+![Logo do projeto](images/README-images/readme-first-image.png)
 
- <img src="images/README-images/readme-first-image.png">
+# Amazon
 
-<p>Nesse projeto o foco é criar a interatividade das páginas</p>
+Atualmente, estou imerso nos estudos de JavaScript, e como parte desse processo, decidi desenvolver um site inspirado na Amazon. Este projeto, criado com foco em interatividade e responsividade, foi desenvolvido seguindo um tutorial do YouTube. Explore as funcionalidades interativas e a adaptação a diferentes dispositivos neste projeto inspirado na renomada plataforma de comércio eletrônico.
 
-<p>O que já foi feito:</p>
-<ul>
-    <li>Adicionar produtos na página usando javascript.</li>
-    <li>Deixar o botão do carrinho interativo.</li>
-    <li>Adicionar produtos no carrinho através da quantidade selecionada no select.</li>
-    <li>Mostrar uma mensagem com set time out, ao adicionar produtos no carrinho.</li>
-    <li>Deixar o input interativo.</li>
-</ul>
+## 🚧Status do Projeto
 
-<p>A fazer:</p>
-<ul>
-    <li>Ao usuário adicionar produtos no carrinho e atualizar a página, o produto deve continuar no carrinho a não ser que o usuário delete o produto na página de pedidos.</li>
-    <li>Criar a interatividade da página de pedidos.</li>
-    <li>Criar a interatividade da página de checkout.</li>
-</ul>
+Este projeto está atualmente em andamento e está sendo desenvolvido ativamente. Novas funcionalidades estão sendo adicionadas e melhorias estão sendo implementadas regularmente. Fique à vontade para contribuir, relatar problemas ou sugerir melhorias. Sua participação é bem-vinda!
 
-<h3>Status do projeto:</h3>
-<p>Em andamento. Conforme estudando e praticando vou melhorando o projeto.</p>
+## Introdução
 
-<h3>O que estou aprendendo ao desenvolver esse projeto?</h3>
-<p>Esse projeto faz parte de um curso do básico ao intermediário. Adicionar os produtos com javascript foram feitas durante as aulas, as interatividades foram deixadas como exercício.</p>
-<p>Com isso eu estou aprendendo a pesquisar de uma maneira melhor, através de documentações do javascript como o MDN e o W3schools, além disso também tive ajuda do chatGPT. Esse projeto também me ajudou a me acostumar a pesquisar e escrever códigos em inglês, com isso qualquer pessoa do mundo vai poder entender o código. Quanto ao javascript, usei array, objetos, Dom em um projeto real.</p>
+Este é o meu mini projeto inspirado na Amazon, desenvolvido com o objetivo de proporcionar uma experiência de compra online excepcional. Meu foco principal é garantir a satisfação do usuário, tornando todas as páginas interativas e fáceis de manusear.
+Criando um ambiente onde cada página é projetada para ser interativa, proporcionando uma experiência de usuário envolvente.
+Simplificamos o processo de compras, garantindo que o usuário possa navegar, selecionar produtos e concluir suas compras de forma intuitiva.
+* Navegação Intuitiva: Explore nosso catálogo de produtos com uma navegação intuitiva que permite encontrar rapidamente o que você precisa.
+* Páginas Responsivas: Todas as páginas foram desenvolvidas para serem responsivas, adaptando-se perfeitamente a diferentes dispositivos.
+* Carrinho de Compras Interativo: Adicione e remova itens do carrinho com facilidade, proporcionando uma experiência de compra dinâmica.
 
-<!-- # Main idea of javascript
+### ⚙️Pré-requisitos
 
-### 1. Save the data.
+Para rodar esse projeto na sua máquina você deve ter os sguintes requistos:
 
-### 2. Generate the HTML.
+- **Git:** Se você não tiver o Git instalado, faça o download e instale a partir do [site oficial do Git](https://git-scm.com/).
+- **Navegador Web:** Recomendamos o uso de um navegador moderno, como Google Chrome ou Mozilla Firefox.
+- **Editor de código de sua preferência:** Alguns exemplos: Visual Studio Code, Sublime Text, Atom.
 
-### 3. Make it interactive.
+   #### Para vizualizar o projeto e testá-lo clique nesse link: https://amazon-javascript-project.vercel.app/index.html
 
-## Cart Steps
+### 🔨 Guia de instalação
 
-### 1. Calculate the quantity.
+  Você pode fazer o download ou cloná-lo no botão "Code" no github. É um projeto simples, feito com html, css e javascript.
+Para clonar basta seguir os seguintes passos:
+1. Clone o repositório em sua máquina local usando o seguinte comando no terminal:
 
-### 2. Put the quantity on the page using the DOM.
+   ```bash
+   git clone https://github.com/Anakeren1996/AmazonProject.git
+   ```
+   ``` bash
+   cd AmazonProject
+   ```
 
-## Select steps
+## 📦 Tecnologias usadas:
 
-### when adding a product to the cart, instead increasing one by one, we'll increase the quantity  by the number in the selector.
+* HTML (https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+* CSS (https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+* Javascript (https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
-## Input interactive steps:
+## 👷 Autor
 
-### 1. Get the value that was typed by the user.
+* **Ana** - *Front-End* - [Anakeren1996](https://github.com/Anakeren1996/)
 
-### 2. Listen for the event of clicking the search icon button, and listen for the event of clicking the enter key.
+## 📄 Licença
 
-### 3. If the words typed by the user match the product(s), display the product in question, otherwise display a message that the product was not found.
--->
+Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE.md](LICENSE.md) para obter detalhes.
+
+
