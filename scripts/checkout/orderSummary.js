@@ -436,11 +436,7 @@ export function renderOrderSummary() {
       removeFromCart(productId);
       // console.log(cart);
 
-      const container = document.querySelector(
-        `.js-cart-item-container-${productId}`
-      );
-      // console.log(container);
-      container.remove();
+      renderOrderSummary();
 
       renderPaymentSummary();
 
