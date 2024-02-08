@@ -1,6 +1,6 @@
 // AUTOMATED TESTS = USING CODE TO TEST CODE
 
-import { formatCurrency } from "../scripts/utils/money.js";
+import { formatCurrency } from "../../scripts/utils/money.js";
 
 console.log("test suite: formatCurrency");
 
